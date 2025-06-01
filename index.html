@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KataKita - Retrouvailes</title>
+  <meta name="description" content="Bagikan cerita dan pengalaman Anda dengan dunia">
+  <meta name="theme-color" content="#FF5252">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon-192x192.png">
+  <link rel="apple-touch-icon" href="./icons/maskable_icon.png">
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <a href="#mainContent" class="skip-link" id="skipLink">Lewati ke konten</a>
+  
+  <header id="appHeader">
+    <div class="header-container">
+      <h1 class="logo">KataKita</h1>
+      <nav id="navigation">
+        <ul>
+          <li><a href="#/" class="nav-link">Home</a></li>
+          <li><a href="#/stories" class="nav-link">Stories</a></li>
+          <li><a href="#/add" class="nav-link">Add Story</a></li>
+          <li id="authNav"></li>
+        </ul>
+      </nav>
+      <div class="hamburger-menu" id="hamburgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="#/" class="nav-link">Home</a></li>
+      <li><a href="#/stories" class="nav-link">Stories</a></li>
+      <li><a href="#/add" class="nav-link">Add Story</a></li>
+      <li id="sidebarAuthNav"></li>
+    </ul>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <main id="mainContent"></main>
+
+  <footer>
+    <p>Kata Kita &copy; Dicoding 2025</p>
+  </footer>
+
+  <div id="action-container"></div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
