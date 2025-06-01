@@ -1,1 +1,1 @@
-https://github.com/RestiDivana/kata-kita-app.git
+https://restidivana.github.io/kata-kita2-app
